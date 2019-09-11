@@ -1,0 +1,4 @@
+<div class="phx-hero">
+    <h2>Hello world, from Phoenix</h2>
+    <input type="text" />
+</div>
