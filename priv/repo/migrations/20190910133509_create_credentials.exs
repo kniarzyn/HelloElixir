@@ -3,7 +3,8 @@ defmodule Hello.Repo.Migrations.CreateCredentials do
 
   def change do
     create table(:credentials) do
-      add :email, :string
+      add :email, :string, null: false
+      add :password, :string, null: false
       add :user_id, references(:users, on_delete: :delete_all), null: false
 
       timestamps()
